@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
- binary_tree_node - cretes or adds a new node to the tree
- @parent: parent node of the tree to be created
- @value: integer in the creted node
- @Return: the created node
+* binary_tree_node - cretes or adds a new node to the tree
+* @parent: parent node of the tree to be created
+* @value: integer in the creted node
+* Return: the created node
 */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
@@ -13,7 +13,7 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 
 	node = malloc(sizeof(binary_tree_t));
 	if (node == NULL)
-		return NULL;
+		return (NULL);
 
 	node->n = value;
 	node->parent = NULL;
@@ -27,5 +27,5 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 	}
 
 	node->parent = parent;
-	return node;
+	return (node);
 }
